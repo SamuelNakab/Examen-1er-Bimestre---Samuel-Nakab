@@ -32,7 +32,7 @@ public class FlotaDeTaxis : MonoBehaviour
                 litrosDeCombustible = cantidadTaxis * (KilometrosPorDia / kilometrosPorLitro);
                 litrosDeCombustible *= diasTrabajados;
 
-                if (litrosDeCombustible > 100)
+                if (litrosDeCombustible >= 100)
                 {
                     precioTotal = litrosDeCombustible * PrecioCombustibleLitro;
                     precioTotal -= precioTotal * descuento100Litros;
